@@ -2,8 +2,8 @@
 Michalski's famous soybean disease database. The dataset has been obtained from UCI-Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/Soybean+(Large) ).
 
 # Dataset 
-The dataset contains 15 classes and 35 attributes of soybean diseases.
+The dataset contains 15 different diseases and 35 features of soybean.
 
 # Data Preprocessing
 To get the overview of the data, profile of the data has been generated using pandas_profiling after and before imputing missing values. 
-Missing values has been imputed by dropping the corresponding rows. 
+Missing values has been imputed by dropping the corresponding rows. To reduce the number of features, feature reduction technique "SelectKBest" based on estimate mutual information has been used. Using this method, only 15 best features has been selected to predict soybean disease. 
